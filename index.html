@@ -1,34 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Internet Technologies and Web Design</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Newsletter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            background: #fff;
+            padding: 30px;
+            width: 100%;
+            max-width: 350px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease-in-out;
+        }
+        .container:hover {
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        h2 {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        label {
+            font-size: 14px;
+            font-weight: 600;
+        }
+        input[type="text"], input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 15px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .checkbox-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .btn {
+            width: 100%;
+            background-color: #407093;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background-color: #345876;
+        }
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+                height: auto;
+            }
+            .container {
+                padding: 20px;
+                max-width: 90%;
+            }
+        }
+        @media (max-width: 480px) {
+            .btn {
+                padding: 10px;
+                font-size: 14px;
+            }
+            h2 {
+                font-size: 20px;
+            }
+        }
+    </style>
 </head>
 <body>
-	<h1>Internet Technologies and Web Design</h1>
-	<h3>Fall 2024</h3>
-	<p>Micheal Okiror, mokiror@hawk.iit.edu</p>
-	<h2>Professor:</h2>
-	<p>Daniel Krieglstein</p>
-	<h2>Lecture Days, Time and Place:</h2>
-	<p>Wednesday 6:25pm to 9:05pm, Wishnick Hall, Room 116</p>
-	<h2>Course Catalog Description:</h2>
-	<p>This course will cover the creation of Web pages and sites using HTML, CSS, Javascript and graphical applications. Networked multimedia distribution technologies are also explored. The design of effective Web site including page layout, user interface design, graphic design, content flow and site structure as well as management of Web site resources including intranet management and design considerations are addressed. Students design and create a major Web site with multiple pages and cross-linked structures. <strong>Prerequisites</strong>: [none] <strong>Credit</strong>: 2-2-3 Semester Hours</p>
-	<h2>Course Outcomes:</h2>
-	<p>Students completing this course will be able to:</p>
-	<ul>
-		<li>Recognize HTML, CSS and JavaScript mark-up and code in a web page/application.</li>
-		<li>Select the proper mark-up tags or code to achieve a particular result.</li>
-		<li>Identify improperly used mark-up and code.</li>
-		<li>Produce modern standards compliant web pages.</li>
-		<li>Deploy web pages to a public server.</li>
-	</ul>
-	<h2>Course Objectives:</h2>
-	<p>At the conclusion of this course, each successful student will able to:</p>
-	<ul>
-		<li>Explain the client and server architecture of the Internet and related web technologies.</li>
-		<li>Use a basic text editor and other software tools to create web pages using HTML, CSS, JavaScript, jQuery, and images.</li>
-		<li>Deploy web pages to a Linux-based web server using sftp.</li>
-	</ul>
+    <div class="container">
+        <h2>Stop guessing</h2>
+        <p>Get access to 9 proven tactics to grow your email list faster. Templates included.</p>
+        <label for="name">Name</label>
+        <input type="text" id="name" placeholder="Enter your name">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Enter your email">
+        <div class="checkbox-container">
+            <input type="checkbox" id="subscribe">
+            <label for="subscribe">Receive weekly marketing insights</label>
+        </div>
+        <button class="btn">GET CHEAT SHEET</button>
+    </div>
 </body>
 </html>
